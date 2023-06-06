@@ -1,0 +1,45 @@
+.btn {
+    padding: 13px 20px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    &-primary {
+        border: 1px solid $primaryColor;
+        background-color: $primaryColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $fontWhite;
+        &-outline {
+            @extend .btn-primary; 
+            background-color: $fontWhite;
+            border: 1px solid $primaryColor;
+            color: $primaryColor;
+        }
+    }
+    &-danger {
+        border: 1px solid $dangerColor;
+        background-color: $dangerColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $fontWhite;
+        &-outline {
+            @extend .btn-danger; 
+            background-color: $fontWhite;
+            border: 1px solid $dangerColor;
+            color: $dangerColor;
+        }
+    }
+    &-white {
+        border-color: $fontWhite;
+        background-color: $fontWhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $fontBlack;
+    }
+}

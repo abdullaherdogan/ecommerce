@@ -1,0 +1,22 @@
+%bgBlend {
+    background-color: $primaryBgColor;
+    mix-blend-mode: screen;
+    backdrop-filter: blur(2px);
+}
+
+%header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+%text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    &-s {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

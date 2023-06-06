@@ -1,0 +1,18 @@
+input {
+    padding: 14px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid $borderColor;
+    outline: none;
+    &::placeholder {
+        color: $fontGray;
+    }
+    &:focus {
+        border: 1px solid $fontBlack;
+    }
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}

@@ -1,0 +1,12 @@
+.header {
+    @extend %header;
+}
+.text {
+    @extend %text;
+    &-s{
+        @extend %text-s;
+    }
+    &-primary {
+       color: $primaryColor;
+    }
+}
