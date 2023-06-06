@@ -3,8 +3,8 @@ import {auth} from '../../utils/Auth'
 import {Navigate, Outlet} from 'react-router-dom'
 
 const ProtectedRoute = ({redirectPath}) => {
-  const user = true
-  if (!user) {
+  const token = auth.getToken()
+  if (!token) {
     return <Navigate to={redirectPath}/>
   }
   return (

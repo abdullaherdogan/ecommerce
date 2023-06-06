@@ -1,5 +1,5 @@
 export const auth = {
-    getUser: () => {
-        return JSON.parse(localStorage.getItem('user'));
+    getToken: () => {
+        return JSON.parse(localStorage.getItem('auth'))?.token;
     }
 }

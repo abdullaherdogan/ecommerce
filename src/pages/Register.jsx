@@ -7,13 +7,13 @@ const Register = () => {
     <div className='login'>
       <img src={logo} alt="Logo" className="logo" />
       <div className="login-form">
-        <div className="header">Kayıt Ol</div>
-        <div className="text">Gerekli Bilgileri Doldurarak Kayıt Olun.</div>
-        <input type="email" placeholder='Email Adresiniz' />
-        <input type="password" placeholder='Şifreniz' />
-        <Button title='Kayıt Ol' className='btn-primary'/>
-        <div className="text">Zaten bir hesabınız var mı? <Link className='text text-primary' to='/login'>
-          Giriş Yap
+        <div className="header">Sign Up</div>
+        <input type="email" placeholder='Email Address' />
+        <input type="password" placeholder='Create Password' />
+        <input type="password" placeholder='Confirm Password' />
+        <Button title='Sign Up' className='btn-primary'/>
+        <div className="text">Already have an account?? <Link className='text text-primary' to='/login'>
+          Sign In
         </Link>
         </div>
         

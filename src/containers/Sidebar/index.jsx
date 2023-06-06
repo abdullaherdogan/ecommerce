@@ -1,8 +1,13 @@
 import React from 'react'
 import logo from '../../assets/images/logo.svg'
-import { NavLink} from 'react-router-dom'
+import { NavLink, useNavigate} from 'react-router-dom'
 import Button from '../../components/Button'
 const Sidebar = () => {
+    const navigate = useNavigate()
+    const logout = () => {
+        localStorage.removeItem('auth')
+        navigate('/login')
+    }
   return (
     <aside className='sidebar'>
         <div className="sidebar-top">
@@ -17,7 +22,7 @@ const Sidebar = () => {
                 <div className="text">Abdullah</div>
                 <div className="text text-primary">Erdogan</div>
             </div>
-            <Button className='btn-white' title='Çıkış Yap'/>
+            <Button className='btn-white' title='Çıkış Yap' onClick={logout} />
         </div>
     </aside>
   )
